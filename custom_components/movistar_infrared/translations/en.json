@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Movistar+ Infrared",
+        "description": "Select the infrared emitter that controls your Movistar+ decoder.",
+        "data": {
+          "name": "Device name",
+          "infrared_emitter_entity_id": "Infrared emitter"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "This infrared emitter is already configured for Movistar+.",
+      "no_emitters": "No infrared emitters were found in Home Assistant."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Movistar+ Infrared options",
+        "description": "Adjust the infrared emitter, signal repeats, and delay between digits when dialing channels.",
+        "data": {
+          "infrared_emitter_entity_id": "Infrared emitter",
+          "repeat_count": "IR signal repeats",
+          "digit_delay_ms": "Delay between digits"
+        }
+      }
+    }
+  }
+}

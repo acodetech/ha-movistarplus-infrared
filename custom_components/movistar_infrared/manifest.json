@@ -1,0 +1,16 @@
+{
+  "domain": "movistar_infrared",
+  "name": "Movistar+ Infrared",
+  "codeowners": [
+    "@acodetech"
+  ],
+  "config_flow": true,
+  "dependencies": [
+    "infrared"
+  ],
+  "documentation": "https://github.com/acodetech/ha-movistarplus-infrared",
+  "integration_type": "device",
+  "iot_class": "assumed_state",
+  "issue_tracker": "https://github.com/acodetech/ha-movistarplus-infrared/issues",
+  "version": "0.1.0"
+}

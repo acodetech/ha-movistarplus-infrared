@@ -1,0 +1,31 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Movistar+ Infrared",
+        "description": "Selecciona el emisor infrarrojo que controla tu descodificador de Movistar+.",
+        "data": {
+          "name": "Nombre del dispositivo",
+          "infrared_emitter_entity_id": "Emisor infrarrojo"
+        }
+      }
+    },
+    "abort": {
+      "already_configured": "Este emisor infrarrojo ya está configurado para Movistar+.",
+      "no_emitters": "No se encontraron emisores infrarrojos en Home Assistant."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Opciones de Movistar+ Infrared",
+        "description": "Ajusta el emisor infrarrojo, las repeticiones de señal y el retardo entre dígitos al marcar canales.",
+        "data": {
+          "infrared_emitter_entity_id": "Emisor infrarrojo",
+          "repeat_count": "Repeticiones de señal IR",
+          "digit_delay_ms": "Retardo entre dígitos"
+        }
+      }
+    }
+  }
+}
