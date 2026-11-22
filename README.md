@@ -13,7 +13,7 @@ Integración personalizada para **Home Assistant** que permite controlar de form
 - **Integración nativa con la plataforma `infrared`**: Se apoya en la arquitectura de Home Assistant (HA 2026.4+), delegando la transmisión al hardware del emisor con latencia casi nula (<50ms).
 - **Selector nativo de canales (`select.*_canal`)**: Incluye el listado completo de canales de Movistar+ (167 diales) para cambiar de canal directamente desde el dashboard sin necesidad de crear `input_select`, scripts ni automatizaciones manuales.
 - **Entidad `remote` mejorada (`remote.*_mando`)**: Soporta encendido/apagado, botones sueltos y cambio directo de canal con diales multidígito o etiquetas de canal (por ejemplo `"54"`, `"222"` o `"69 - DAZN F1"`) en `remote.send_command`.
-- **40 botones individuales (`button.*`)**: Todos los mandos oficiales mapeados (números 0–9, cruceta, OK, Guía, Menú, Info, colores, reproducción, volumen, etc.).
+- **33 botones individuales (`button.*`)**: Todos los botones del mando oficial UHD mapeados (números 0–9, cruceta, OK, Guía, Menú, Buscar, Audio y Subtítulos, Mensajes, reproducción, volumen, etc.).
 - **Opciones configurables desde la UI (`Configurar`)**: Permite cambiar el emisor infrarrojo, las repeticiones IR (`1–5`, por defecto `3`) y el retardo entre dígitos (`100–1000 ms`, por defecto `350 ms`) sin eliminar ni recrear entidades.
 - **Trama y modulación exactas**: Configurado a la frecuencia de portadora exacta de Movistar (**57.6 kHz**) con ráfagas y espacios calibrados para el receptor del decodificador.
 
@@ -53,7 +53,7 @@ A partir de ese momento, cualquier nueva versión publicada en GitHub aparecerá
 Se crearán automáticamente bajo el mismo dispositivo:
 * 1 entidad `select.*_canal` (selector nativo de canales)
 * 1 entidad `remote.*_mando`
-* 40 entidades `button.*`
+* 33 entidades `button.*`
 
 Desde el botón **Configurar** de la integración puedes ajustar en cualquier momento el emisor IR, el número de repeticiones (`repeat_count`) y el retardo entre dígitos (`digit_delay_ms`).
 
